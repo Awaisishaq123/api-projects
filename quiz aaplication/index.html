@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMIT Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="quiz-card">
+      <h1>📘 SMIT Quiz App</h1>
+      <div id="timer">⏱️ Time Left: 20:00</div>
+      <div id="quiz-box">
+        <p id="ques">Loading question...</p>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="quiz" id="opt1_radio" onclick="btnWork()" />
+            <span id="opt1"></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="quiz" id="opt2_radio" onclick="btnWork()" />
+            <span id="opt2"></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="quiz" id="opt3_radio" onclick="btnWork()" />
+            <span id="opt3"></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="quiz" id="opt4_radio" onclick="btnWork()" />
+            <span id="opt4"></span>
+          </label>
+        </div>
+        <button id="btn" disabled onclick="nextQuestion()">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
